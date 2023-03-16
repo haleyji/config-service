@@ -9,18 +9,15 @@ spring:
     port: 5672
     username: guest
     password: guest
-  profiles:
-    active: native
   cloud:
     config:
       server:
         native:
-          search-locations: file://${user.home}/dev/native-file-repo
+#          search-locations: file://${user.home}/dev/native-file-repo
         git:
-#          uri: file:///Users/young/dev/git-repository
-          uri: https://github.com/haleyji/ecommerce-config.git
+          uri: file:///Users/young/dev/git-repos
 management:
   endpoints:
     web:
       exposure:
-        include: health, busrefresh
+        include: health, refresh
