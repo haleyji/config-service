@@ -35,4 +35,4 @@ build/
 
 ### .http files ###
 .http
-/http/**
+/http/

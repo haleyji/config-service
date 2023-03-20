@@ -4,18 +4,18 @@ server:
 spring:
   application:
     name: config-service
-  rabbitmq:
-    host: 127.0.0.1
-    port: 5672
-    username: guest
-    password: guest
+#  rabbitmq:
+#    host: 127.0.0.1
+#    port: 5672
+#    username: guest
+#    password: guest
   cloud:
     config:
       server:
         native:
 #          search-locations: file://${user.home}/dev/native-file-repo
         git:
-          uri: file:///Users/young/dev/git-repos
+          uri: file://${user.home}/dev/git-repos
 management:
   endpoints:
     web:
